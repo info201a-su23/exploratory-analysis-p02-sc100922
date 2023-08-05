@@ -114,15 +114,35 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
+# We created the table below to see the shooting case in Washington state because 
+# we all live here sometimes. This's important for us to know our safety. We also
+# caculated out the ratio of n_killed over n_injured, and rounded by 2 digits. The
+# higher the killed/injured ratio of a shooting case is, the more severer the case would be.
+# We found that WA state is relatively a safe place because there were less than 6k shooting
+# cases in the past 10 years (less than most of the states). And people died in these shootings
+# cases were few. Most of them were just injured.
+# Group_by: group the data by the 'state' column.
+# Ranked: Ranked by date (ascending)
+wa_cases <- gunshot %>%
+  group_by(state) %>%
+  filter(state == "Washington") %>%
+  arrange(as.Date(date))%>%
+  ungroup()
+print(wa_cases)
+
+# Rounded: get the ratio of n_killed over n_injured, and rounded by 2 digits
+wa_case_ratios <- wa_cases %>%
+  mutate(ratio = round(n_killed / n_injured, digits = 2))
+print(wa_case_ratios)
 
 ### Chart 1
 
 ```{r, echo = FALSE, code = readLines("chart1.R"), message = FALSE, results='hide'}
 ```
 
-Our group's choice to use a lineplot was made in order to accurately portray the trend of total cases over the past ten years, from January 2013 to May 2022.  This particular type of graph enables us to identify any significant trends or anomalies in the data.  After plotting out the graph, our group found that the data have a few outliers.   For example, we found that the data from 2013 and 2022 are not complete.   Unluckily, we can not estimate the total cases of in 2013 because its data was not continuously recorded.   But we can estimate the shooting case of 2022 because it is reliable and can be estimated on continuous historical data.
+Our group's choice to use a line plot was made in order to accurately portray the trend of total cases over the past ten years, from January 2013 to May 2022.  This particular type of graph enables us to identify any significant trends or anomalies in the data.  After plotting out the graph, our group found that the data have a few outliers.   For example, we found that the data from 2013 and 2022 are not complete.   Unluckily, we can not estimate the total number of cases in 2013 because its data was not continuously recorded.   But we can estimate the shooting case of 2022 because it is reliable and can be estimated on continuous historical data.
 
-Moreover, we believe that the number of shooting cases increased from 2014 to 2016.    However, since the government is imposing strict policies on gun control, we do see some gun shooting cases decrease from 2017 to 2019.    However, because of covid, the shooting cases increased quickly once the pandemic started. This is reasonable because there was high unemployment during the Covid, meaning that society was not safe as before. However, as the pandemic ended and the government's policy on encouraging firms to develop and provide jobs for people, we do see the number of shooting cases declines in recent 2 years.
+Moreover, we believe that the number of shooting cases increased from 2014 to 2016.    However, since the government is imposing strict policies on gun control, we do see some gun shooting cases decrease from 2017 to 2019.    However, because of covid, the shooting cases increased quickly once the pandemic started. This is reasonable because there was high unemployment during the Covid, meaning that society was not safe as before. However, as the pandemic ended and the government's policy on encouraging firms to develop and provide jobs for people, we do see the number of shooting cases decline in recent 2 years.
 
 ### Chart 2
 
