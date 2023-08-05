@@ -3,26 +3,30 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## Project title
+##  Gun violence incidents analysis in the United States
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+
 
 ### Authors
-
-Names of your team members
+Team members:
+Lufei Chen (lufeic@uw.edu)
+Hongye Lin (hlin9@uw.edu)
+Shipei Huang (shipeh@uw.edu)
+Wendy Bu (wsb22@uw.edu)
 
 ### Date
 
-Winter 2022
+8/4/23 Spring23
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our main question is to analyze the geographic patterns and temporal trends of gun violence incidents in the United States. This question is important because it allows people to identify high-risk areas and to find potential ways to prevent gun violence. To address the question, we will conduct a comprehensive analysis of the dataset obtained from Kaggle, examining changes in the frequency of gun violence incidents over time and exploring potential patterns or correlations with demographic factors.
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+1. Gun Violence 
+2. Public Safety 
+3. Social Impact 
 
 ### Introduction  
 
