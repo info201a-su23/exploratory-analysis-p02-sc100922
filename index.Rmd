@@ -34,10 +34,9 @@ Gun violence is a serious problem that affects residents in the United States. O
 
 The research questions that we'll be focusing on are:
 
-1. How has the number of gun violence incidents changed over time in different states and cities? 
-2. Are there any seasonal or temporal patterns in gun violence incidents? 
-3. Does gun violence differ in cities, suburbs, and rural areas? 
-4. Does demographic factors such as age, gender, and ethnicity intersect with gun violence trends? 
+1. How has the number of gun violence incidents changed over time in different states and cities?  
+2. Does gun violence differ in cities, suburbs, and rural areas? 
+3. Does gun violence data analysis for each US state indicate a significant public safety threat?
 
 The motivation behind our research questions is driven by an urgent need to combat gun violence in the United States. We want to figure out if there’s any certain trends of gun violence by either location, group of people, seasons of the year, etc. By analyzing these questions, we can better understand gun violence and the potential reasons behind it. Since it affects the safety and well-being of all residents in the United States, studying the trends over time and across different areas can help us to learn more about the factors that contribute to gun violence and find ways to prevent it.
 
