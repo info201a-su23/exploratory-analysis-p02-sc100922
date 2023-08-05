@@ -2,7 +2,6 @@
 title: "Exploratory Analysis"
 output: html_document
 ---
-
 ##  Gun violence incidents analysis in the United States
 
 
@@ -118,30 +117,21 @@ Describe why you included the table and what information it reveals
 
 ### Chart 1
 
-lineplot/scatterplot: recent 10 years (2013/01-2022/05) total cases trend
-
-Include a chart
+```{r, echo = FALSE, code = readLines("chart1.R"), message = FALSE, results='hide'}
+```
 
 Describe why you chose this chart and what information it reveals
 
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-```
-
 ### Chart 2
 
-map (each state visualization by color)
-
-Include a chart
-```{r, echo = FALSE, code = readLines("chart2.R")}
-total_incidents_map
+```{r, echo = FALSE, code = readLines("chart2.R"), message = FALSE}
 ```
 
 Describe why you chose this chart and what information it reveals
 
 ### Chart 3
 
-Include a chart
+```{r, echo = FALSE, code = readLines("chart_map.R"), message = FALSE}
+```
 
 Describe why you chose this chart and what information it reveals
