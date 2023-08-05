@@ -96,6 +96,8 @@ Describe why you included the table and what information it reveals
 
 ### Chart 1
 
+scatterplot: recent 10 years (2013-2022) total cases trend
+
 Include a chart
 
 Describe why you chose this chart and what information it reveals
@@ -106,6 +108,8 @@ Here's an example of how to run an R script inside an RMarkdown file:
 ```
 
 ### Chart 2
+
+map?
 
 Include a chart
 
