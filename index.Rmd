@@ -34,7 +34,7 @@ Gun violence is a serious problem that affects residents in the United States. O
 The research questions that we'll be focusing on are:
 
 1. How has the number of gun violence incidents changed over time in different states and cities?  
-2. Does gun violence differ in cities, suburbs, and rural areas? 
+2. Does gun violence differ by state?
 3. Does gun violence data analysis for each US state indicate a significant public safety threat?
 
 The motivation behind our research questions is driven by an urgent need to combat gun violence in the United States. We want to figure out if there’s any certain trends of gun violence by either location, group of people, seasons of the year, etc. By analyzing these questions, we can better understand gun violence and the potential reasons behind it. Since it affects the safety and well-being of all residents in the United States, studying the trends over time and across different areas can help us to learn more about the factors that contribute to gun violence and find ways to prevent it.
@@ -120,18 +120,26 @@ Describe why you included the table and what information it reveals
 ```{r, echo = FALSE, code = readLines("chart1.R"), message = FALSE, results='hide'}
 ```
 
-Describe why you chose this chart and what information it reveals
+Our group's choice to use a lineplot was made in order to accurately portray the trend of total cases over the past ten years, from January 2013 to May 2022.  This particular type of graph enables us to identify any significant trends or anomalies in the data.  After plotting out the graph, our group found that the data have a few outliers.   For example, we found that the data from 2013 and 2022 are not complete.   Unluckily, we can not estimate the total cases of in 2013 because its data was not continuously recorded.   But we can estimate the shooting case of 2022 because it is reliable and can be estimated on continuous historical data.
+
+Moreover, we believe that the number of shooting cases increased from 2014 to 2016.    However, since the government is imposing strict policies on gun control, we do see some gun shooting cases decrease from 2017 to 2019.    However, because of covid, the shooting cases increased quickly once the pandemic started. This is reasonable because there was high unemployment during the Covid, meaning that society was not safe as before. However, as the pandemic ended and the government's policy on encouraging firms to develop and provide jobs for people, we do see the number of shooting cases declines in recent 2 years.
 
 ### Chart 2
 
 ```{r, echo = FALSE, code = readLines("chart2.R"), message = FALSE}
 ```
 
-Describe why you chose this chart and what information it reveals
+In the second chart, our team plotted a map to compare and analyze whether there are differences in gun violence cases between states in the United States. We used green to represent areas with the fewest gun violence cases, and red to represent areas with the most gun violence cases. In the chart, we can clearly see that the central states, especially Michigan and Illinois, are marked in red. These areas have noticeably higher values, indicating that gun violence is quite prevalent in these states and their surrounding areas. The federal government should pay attention to the gun violence cases in these states as it poses a serious threat to public and citizen safety. Furthermore, the western states, especially California and Texas, are marked in orange. Compared to other areas, California and Texas rank second in gun violence cases, which should also draw the federal government's attention.
+
+Fortunately, the proportion of green in the chart is higher than red. Green represents areas with lower values, indicating that most areas do not have many incidents of gun violence. However, areas that are marked in green generally do not have the population density and economic disparities as much as the red areas do. This suggests that the frequency of gun violence cases is higher when population density and economic disparities are greater.
 
 ### Chart 3
 
 ```{r, echo = FALSE, code = readLines("chart_map.R"), message = FALSE}
 ```
 
-Describe why you chose this chart and what information it reveals
+For the third chart, our team created a lollipop bar chart to compare and analyze the number of casualties due to gun violence in each state of the United States. From the chart, we learned that from December 31, 2012, to May 27, 2022, the state with the highest number of casualties due to gun violence is Illinois, which is also the only state with over 30,000 casualties. This indicates that the frequency and severity of gun violence cases in Illinois are extremely high. The federal government should pay attention to the states with the highest number of casualties, such as implementing some policies for gun control and improving public safety, thereby reducing the risk of residents being affected by these incidents. From the chart, we can also see that Texas, Florida, and California also have a high number of casualties due to gun violence, with the number of casualties exceeding 20,000.
+
+From the chart, we can also see that places with a high population density have a higher number of casualties due to gun violence. Compared to states like California, states like Wyoming, Vermont, and Hawaii, which have a lower population density, have a lower number of casualties.
+
+When we find a significant public safety threat in gun violence data analysis, it means that guns pose a real and direct danger to the public. For states with the highest number of casualties, it is crucial to take emergency intervention measures to reduce the impact on society and the economy.
