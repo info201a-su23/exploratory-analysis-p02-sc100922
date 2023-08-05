@@ -62,8 +62,10 @@ Related Work (links):
 
 
 2. Who collected the data?  
+The data was collected from the Gun Violence Archive (GVA).
 
 3. How was the data collected or generated?  
+GVA collects data from most law enforcement, government, and commercial sources on a daily basis to provide people with real-time data. Kaggle users then selected data from the GVA website for analysis.
 
 4. Why was the data collected?  
 
