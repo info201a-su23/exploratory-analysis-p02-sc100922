@@ -5,11 +5,7 @@ library(scales)
 library(stringr)
 
 # load data
-<<<<<<< HEAD
 gunshot <- read.csv("https://raw.githubusercontent.com/info201a-su23/exploratory-analysis-p02-sc100922/main/all_incidents.csv")
-=======
-gunshot <- read.csv("/Users/wendybu/Desktop/info201/groupproject/exploratory-analysis-p02-sc100922/all_incidents.csv")
->>>>>>> 9f974f66f05b52adbe0db575739016ad4bd36bc8
 
 # Get the state borders data for the US
 us_states <- map_data("state")
