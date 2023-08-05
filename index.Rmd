@@ -67,21 +67,36 @@ The data was collected from the Gun Violence Archive (GVA).
 GVA collects data from most law enforcement, government, and commercial sources on a daily basis to provide people with real-time data. Kaggle users then selected data from the GVA website for analysis.
 
 4. Why was the data collected?  
+The data was collected to raise awareness of the magnitude of the problem of gun violence
 
-5. How many observations (rows) are in your data? 
+5. How many observations (rows) are in your data?
+The data set has two files: all_incidents.csv has 472820 observations, and mass_shootings.csv has 3609 observations.
 
 6. How many features (columns) are in the data?  
+There are seven features in the data.
 
 7. What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+The dataset includes the geographical location of the incidents. Although the data doesn't include names, it's still necessary to protect the privacy of the individuals involved. The collected data may be biased, which can reduce the accuracy of data analysis. The topic of gun violence is sensitive, so sensitivity is extremely important when presenting results.
 
 8. What are possible limitations or problems with this data?   (at least 200 words)
+The data may face the challenge of incompleteness, meaning not all gun violence incidents are included in the dataset. Incidents in populous areas might be more likely to be exposed and reported, while gun violence incidents in less populated areas may go unreported. Therefore, this could reduce the representativeness and reliability of the data. Additionally, due to societal complexities and existing biases, there may also be biases in the collected dataset of gun violence incidents, potentially distorting results. This can reduce the validity and accuracy of the data. This is because the data on gun violence comes from various places such as the government, media, law enforcement departments, etc. For instance, media organizations often decide which gun violence incident to report based on its news value, thus introducing bias; given the sensitivity of the topic of gun violence, governments, and law enforcement may hide the true situation, leading to data bias. Moreover, the dataset lacks specific background information. Society is complex, and if we record just the location of the gun violence incidents, the data and analysis obtained would be one-sided. Only by understanding the different economic and political conditions in each state can we analyze these factors in detail as to the causes of gun violence incidents.
+
+These issues might lead to incorrect analysis and recording of the data, causing misconceptions about gun violence incidents, which is a challenge for the dataset.
 
 ### Implications
 
 Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+For technologists, our project can build predictive models that can forecast potential gun violence hotspots and identify the patterns of these incidents. We can also do data visualization to communicate the patterns and trends in gun violence effectively. Different technologists can revise or improve their projects for their own purposes based on our data visualization.
+
+For designers, they can effectively decide when/where to sell their products (to make maximum profits and keep the communities safe at the same time). It enables designers to consider the needs of all users (all people), including victims' families, community leaders, and law enforcement personnel when designing platforms or tools to address gun violence, ensuring that the solutions are effective and beneficial to all users.
+
+For policymakers, they can rely on our model to make informed decisions on gun violence prevention strategies. Also, knowing the areas with the highest rates of gun violence can let them allocate resources to those regions appropriately. This targeted approach can maximize the impact of interventions.
+
 
 ### Limitations & Challenges
 What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+One of the limitations is that our data doesn’t include the specific type of gun that shooters prefer to use. We believe that there will be certain types of guns that attackers prefer to use in these violent incidents. Through analyzing the guns, we can give suggestions to gun sellers or manufacturers about your sell strategies. For example, they can reduce the amount of sales at certain times or seasons when gunshot cases are expected to reach the peak based on our model. Another challenge we might have is related to policy. The gun laws are not consistent throughout all the States. Different states have different policies on gun control. And these policies are frequently being revised or changed, meaning that the gunshots may not have a constant pattern as we expected. The changing government policy can make our model hard to predict trends because our model is based on the assumption that policy is fixed. Thus, we may have a larger statistic marginal error bar.
 
 ### Summary Information
 
