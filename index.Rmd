@@ -107,7 +107,8 @@ One of the limitations is that our data doesn’t include the specific type of g
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+In our comprehensive data analysis, we scrutinized gun violence incidents across the United States over the period of 2014 to 2021, specifically excluding the years 2013 and 2022 due to data incompleteness.  Our in-depth study revealed various valuable insights, including the identification of maximum and minimum recorded cases during the considered timeframe.  The peak of gun violence incidents was observed in the year 2020, with a staggering number of 62,330 shootings nationwide(1).  Contrastingly, the least number of cases were registered in 2014, with the count standing at 51,854 shootings(2).  These particular figures provide an understanding of the severity and fluctuation of gun violence incidents in the country over the specified years.
+Moreover, a state-by-state breakdown between December 31, 2012, and May 27, 2022, showed that Illinois bore the brunt of gun violence, with the highest number of deaths and injuries, reaching 36,367. (3) In contrast, Wyoming saw the lowest impact, with only 235 recorded gun violence deaths and injuries. (4) Furthermore, the analysis brought to light an alarming incident in Orlando where, on a single day, as many as 50 people were killed or injured by gun violence. (5) These findings underscore the grave threat that gun violence poses to public safety and social stability in the United States, necessitating urgent and comprehensive interventions.
 
 ### Table
 
@@ -162,4 +163,4 @@ For the third chart, our team created a lollipop bar chart to compare and analyz
 
 From the chart, we can also see that places with a high population density have a higher number of casualties due to gun violence. Compared to states like California, states like Wyoming, Vermont, and Hawaii, which have a lower population density, have a lower number of casualties.
 
-When we find a significant public safety threat in gun violence data analysis, it means that guns pose a real and direct danger to the public. For states with the highest number of casualties, it is crucial to take emergency intervention measures to reduce the impact on society and the economy.
+When we find a significant public safety threat in gun violence data analysis, it means that guns pose an honest and direct danger to the public. For states with the highest number of casualties, it is crucial to take emergency intervention measures to reduce the impact on society and the economy.
