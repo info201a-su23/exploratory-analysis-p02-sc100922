@@ -1,7 +1,9 @@
-x_values <- seq(1, 3)
-y_values <- seq(1,3)
-
+library(dplyr)
+library(tidyverse)
 library(ggplot2)
-ggplot() +
-  geom_point(aes(x=x_values, y = y_values))
+gunshot <- read.csv("/Users/shipei/Desktop/info201/exploratory-analysis-p02-sc100922/all_incidents.csv")
+gunshot
+names(gunshot)
+
+
 
