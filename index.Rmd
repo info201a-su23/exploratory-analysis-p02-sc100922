@@ -114,15 +114,15 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
-# We created the table below to see the shooting case in Washington state because 
-# we all live here sometimes. This's important for us to know our safety. We also
-# caculated out the ratio of n_killed over n_injured, and rounded by 2 digits. The
-# higher the killed/injured ratio of a shooting case is, the more severer the case would be.
-# We found that WA state is relatively a safe place because there were less than 6k shooting
-# cases in the past 10 years (less than most of the states). And people died in these shootings
-# cases were few. Most of them were just injured.
-# Group_by: group the data by the 'state' column.
-# Ranked: Ranked by date (ascending)
+We created the table below to see the shooting case in Washington state because 
+we all live here sometimes. This's important for us to know our safety. We also
+calculated out the ratio of n_killed over n_injured, and rounded by 2 digits. The
+higher the killed/injured ratio of a shooting case is, the more severer the case would be.
+We found that WA state is relatively a safe place because there were less than 6k shooting
+cases in the past 10 years (less than most of the states). And people died in these shootings
+cases were few. Most of them were just injured.
+Group_by: group the data by the 'state' column.
+Ranked: Ranked by date (ascending)
 wa_cases <- gunshot %>%
   group_by(state) %>%
   filter(state == "Washington") %>%
@@ -130,7 +130,7 @@ wa_cases <- gunshot %>%
   ungroup()
 print(wa_cases)
 
-# Rounded: get the ratio of n_killed over n_injured, and rounded by 2 digits
+Rounded: get the ratio of n_killed over n_injured, and rounded by 2 digits
 wa_case_ratios <- wa_cases %>%
   mutate(ratio = round(n_killed / n_injured, digits = 2))
 print(wa_case_ratios)
