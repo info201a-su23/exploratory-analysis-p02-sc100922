@@ -112,24 +112,11 @@ Moreover, a state-by-state breakdown between December 31, 2012, and May 27, 2022
 
 ### Table
 
-Include a table of aggregate information
-
-Describe why you included the table and what information it reveals
 We created the table below to see the shooting case in Washington state because 
-we all live here sometimes. This's important for us to know our safety. We also
-calculated out the ratio of n_killed over n_injured, and rounded by 2 digits. The
-higher the killed/injured ratio of a shooting case is, the more severer the case would be.
-We found that WA state is relatively a safe place because there were less than 6k shooting
-cases in the past 10 years (less than most of the states). And people died in these shootings
-cases were few. Most of them were just injured.
-Group_by: group the data by the 'state' column.
-Ranked: Ranked by date (ascending)
-wa_cases <- gunshot %>%
-  group_by(state) %>%
-  filter(state == "Washington") %>%
-  arrange(as.Date(date))%>%
-  ungroup()
-print(wa_cases)
+we all live here sometimes. This is important for us to know our safety. We also calculated out the ratio of n_killed over n_injured, and rounded by 2 digits. The higher the killed/injured ratio of a shooting case is, the more severer the case would be. We found that WA state is relatively a safe place because there were less than 6k shooting cases in the past 10 years (less than most of the states). And people died in these shootings cases were few. Most of them were just injured.
+
+```{r, echo = FALSE, code = readLines("table.R"), message = FALSE}
+```
 
 Rounded: get the ratio of n_killed over n_injured, and rounded by 2 digits
 wa_case_ratios <- wa_cases %>%
@@ -147,7 +134,7 @@ Moreover, we believe that the number of shooting cases increased from 2014 to 20
 
 ### Chart 2
 
-```{r, echo = FALSE, code = readLines("chart2.R"), message = FALSE}
+```{r, echo = FALSE, code = readLines("chart_map.R"), message = FALSE}
 ```
 
 In the second chart, our team plotted a map to compare and analyze whether there are differences in gun violence cases between states in the United States. We used green to represent areas with the fewest gun violence cases, and red to represent areas with the most gun violence cases. In the chart, we can clearly see that the central states, especially Michigan and Illinois, are marked in red. These areas have noticeably higher values, indicating that gun violence is quite prevalent in these states and their surrounding areas. The federal government should pay attention to the gun violence cases in these states as it poses a serious threat to public and citizen safety. Furthermore, the western states, especially California and Texas, are marked in orange. Compared to other areas, California and Texas rank second in gun violence cases, which should also draw the federal government's attention.
@@ -156,7 +143,7 @@ Fortunately, the proportion of green in the chart is higher than red. Green repr
 
 ### Chart 3
 
-```{r, echo = FALSE, code = readLines("chart_map.R"), message = FALSE}
+```{r, echo = FALSE, code = readLines("chart2.R"), message = FALSE}
 ```
 
 For the third chart, our team created a lollipop bar chart to compare and analyze the number of casualties due to gun violence in each state of the United States. From the chart, we learned that from December 31, 2012, to May 27, 2022, the state with the highest number of casualties due to gun violence is Illinois, which is also the only state with over 30,000 casualties. This indicates that the frequency and severity of gun violence cases in Illinois are extremely high. The federal government should pay attention to the states with the highest number of casualties, such as implementing some policies for gun control and improving public safety, thereby reducing the risk of residents being affected by these incidents. From the chart, we can also see that Texas, Florida, and California also have a high number of casualties due to gun violence, with the number of casualties exceeding 20,000.
